@@ -11,6 +11,9 @@ local plugins = {
     "nvim-tree/nvim-web-devicons",
     "tpope/vim-fugitive",
     "tpope/vim-surround",
+    "nvim-lualine/lualine.nvim",
+    "numToStr/Comment.nvim",
+    "edluffy/hologram.nvim",
     {
         "nvim-telescope/telescope.nvim",
         dependencies = { "nvim-lua/plenary.nvim" }
@@ -31,3 +34,8 @@ end
 require("lazy").setup(plugins, {})
 require("plugins.nvim-tree.init")
 require("plugins.telescope.init")
+require("plugins.lualine.init")
+require("plugins.comment.init")
+require("plugins.hologram.init")
+
+return {}
